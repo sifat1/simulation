@@ -46,9 +46,12 @@ for i in range(100):
     if Q == 2:
         balking += 1
     else:
-        if arraival-duration < 0 and Q < 2 and Q >= 0:
+        if (arraival-duration) < 0 and Q < 2 and Q >= 0:
             Q += 1
             duration -= arraival
-        elif arraival-duration >= 0 and Q <= 2 and Q > 0:
+        else:
             Q -= 1
+            duration = 0
+
+
 print(balking)

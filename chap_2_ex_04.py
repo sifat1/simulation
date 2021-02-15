@@ -45,4 +45,6 @@ for i in range(100):
     if arraival-duration < 0:
         wait += duration - arraival
         duration -= arraival
+    else:
+        duration = 0
 print(f"AVG waiting time is {wait/100}")
